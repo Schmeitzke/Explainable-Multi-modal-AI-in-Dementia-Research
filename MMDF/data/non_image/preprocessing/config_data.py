@@ -1,0 +1,20 @@
+INPUT_CSV_PATH = ""
+PROCESSED_CSV_PATH = ""
+SCALER_PATH = ""
+IMPUTER_PATH = ""
+ENCODED_COLUMNS_PATH = ""
+
+
+TARGET_COLUMN = 'DIAGNOSIS'
+PTID_COLUMN = 'PTID'
+
+CATEGORICAL_COLS_OHE = [
+    'PTETHCAT',
+    'PTRACCAT',
+    'PTMARRY'
+]
+
+KNN_N_NEIGHBORS = 5
+
+import os
+os.makedirs(os.path.dirname(SCALER_PATH), exist_ok=True)

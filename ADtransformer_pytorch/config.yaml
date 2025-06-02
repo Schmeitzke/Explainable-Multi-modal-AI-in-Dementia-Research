@@ -1,0 +1,52 @@
+classifier:
+  dropout: 0.3
+  hidden_dim: 128
+  output_dim: 3
+data:
+  balance_classes: false
+  binary_class_names: &id001
+  - CN
+  - AD
+  class_names: *id001
+  image_format: nifti
+  perform_binary_classification_cn_ad: false
+  processed_flair_dir_adnimerge:
+  processed_mprage_dir_adnimerge:
+  processed_t1_dir_adnimerge:
+  scan_types:
+  - mprage
+  - flair
+  - t1
+  subject_id_column: PTID
+  test_csv_path:
+  train_csv_path:
+image:
+  conv_channels:
+  - 8
+  - 16
+  - 32
+  - 64
+  embed_dim: 64
+  in_channels: 1
+  num_patches: 64
+  patch_size: 36
+  shape:
+  - 144
+  - 144
+  - 144
+  slice_axis: 2
+  use_images: true
+  use_slice_selection: true
+non_image:
+  embed_dim: 64
+  num_features: 22
+training:
+  batch_size: 32
+  epochs: 5
+  learning_rate: 0.001
+  use_class_weights: true
+transformer:
+  dropout: 0.3
+  ffn_dim: 256
+  num_heads: 8
+  num_layers: 1

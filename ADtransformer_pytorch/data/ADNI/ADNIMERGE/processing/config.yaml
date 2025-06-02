@@ -1,0 +1,11 @@
+# Data Configuration
+data:
+  raw_base_dir: ''
+  mprage_dir: ''
+  flair_dir: ''
+  t1_dir: ''
+  scan_types:
+    - mprage
+    - flair
+    - t1
+  subject_id_column: 'PTID'
