@@ -1,0 +1,17 @@
+matplotlib==3.10.0
+missingno==0.5.2
+nibabel==5.3.2
+numpy==2.2.3
+pandas==2.2.3
+pydicom==3.0.1
+PyYAML==6.0.2
+scikit-image==0.25.2
+scikit-learn==1.6.1
+scipy==1.15.2
+seaborn==0.13.2
+SimpleITK==2.4.1
+torch==2.6.0
+torchvision==0.21.0
+tqdm==4.67.1
+Flask==3.1.0
+Werkzeug==3.1.3

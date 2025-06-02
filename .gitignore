@@ -28,7 +28,7 @@ htmlcov/
 .nox/
 
 # Pictures
-*.png
+# *.png
 *.jpg
 *.jpeg
 *.gif
@@ -39,7 +39,7 @@ htmlcov/
 *.pth
 
 # Text files
-*.txt
+# *.txt
 # *.md
 # *.pdf
 *.docx
